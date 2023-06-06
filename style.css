@@ -1,0 +1,31 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+#container {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    height: 50%;
+    gap: 2px;
+}
+#display {
+    background-color: gray;
+}
+.row {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 2px;
+}
+.row button {
+    width: 50px;
+    padding: 12px;
+    font-size: 16px;
+}
+
+.row .btn {
+    flex-basis: 102px;
+}
