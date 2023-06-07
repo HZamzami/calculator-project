@@ -1,31 +1,58 @@
+* {
+    box-sizing: border-box;
+}
+html {
+    height: 100%;
+}
 body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 100%;
+    overflow: hidden; /* Hide scrollbars */
 }
 #container {
     display: flex;
     flex-direction: column;
-    width: 30%;
-    height: 50%;
-    gap: 2px;
+    width: 400px;
+    height: 60%;
+    /* gap: 2px; */
+    border: 12px solid gray;
+    /* padding: 2px; */
 }
 #display {
-    background-color: gray;
+    background-color: #EEEFEF;
+    border-bottom: 10px solid gray;
+    flex-basis: 25%;
+    font-size: 26px;
+    display: flex;
+    justify-content: right;
+    align-items: flex-end;
+    padding: 8px;
 }
 .row {
+    flex-basis: 15%;
     width: 100%;
     display: flex;
     justify-content: center;
-    gap: 2px;
+    flex-wrap: wrap;
+    /* gap: 2px; */
 }
 .row button {
-    width: 50px;
+    flex-basis: 25%;
     padding: 12px;
-    font-size: 16px;
+    /* border-radius: 0px; */
+    font-size: 20px;
 }
 
 .row .btn {
-    flex-basis: 102px;
+    flex-basis: 50%;
 }
+
+
+/* .delete-btn {
+    background-color: lightblue;
+}
+.clear-btn {
+    background-color: lightcoral;
+} */
